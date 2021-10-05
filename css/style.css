@@ -20,8 +20,26 @@ body {
     width: 250px;
     height: 100%;
     background-color: black;
+    padding: 10px;
 }
 
+#wrapper #side-nav {
+    /* debug */
+    background-color: blueviolet;
+    height: 200px;
+}
+
+#wrapper #playlist {
+    /* debug */
+    background-color: chartreuse;    
+    height: calc(100% - 200px - 80px);
+}
+
+#wrapper #user {
+    /* debug */
+    background-color: blueviolet;
+    height: 80px;    
+}
 /* contenuto centrale */
 #wrapper main {
     width: calc(100vw - 250px);
