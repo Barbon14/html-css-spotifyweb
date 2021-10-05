@@ -4,3 +4,33 @@
     margin: 0;
     padding: 0;  
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* wrapper */
+#wrapper {
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+/* menù latrale */
+#wrapper aside {
+    width: 250px;
+    height: 100%;
+    background-color: black;
+}
+
+/* contenuto centrale */
+#wrapper main {
+    width: calc(100vw - 250px);
+    height: 100%;
+    background-color: #141922;
+}
+
+/* barra inferiore con player */
+#player {
+    height: 100px;
+    background-color: #282828;
+}
