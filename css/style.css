@@ -9,6 +9,24 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* debug */
+h2 {
+    height: 60px;
+    background-color: yellow;
+}
+
+h4 {
+    height: 40px;
+    background-color: cornflowerblue;
+}
+
+
 /* wrapper */
 #wrapper {
     height: calc(100vh - 100px);
@@ -23,19 +41,21 @@ body {
     padding: 10px;
 }
 
-#wrapper #side-nav {
+#wrapper aside #side-nav {
     /* debug */
     background-color: blueviolet;
     height: 200px;
 }
 
-#wrapper #playlist {
+/* sezione playlist */
+#wrapper aside #playlist {
     /* debug */
     background-color: chartreuse;    
     height: calc(100% - 200px - 80px);
 }
 
-#wrapper #user {
+/* utente */
+#wrapper aside #user {
     /* debug */
     background-color: blueviolet;
     height: 80px;    
@@ -45,6 +65,44 @@ body {
     width: calc(100vw - 250px);
     height: 100%;
     background-color: #141922;
+    padding-top: 100px;
+    overflow-y: scroll;
+}
+
+/* barra fissa in alto con pulsante upgrade */
+#wrapper main #upgrade {
+    height: 100px;
+    width: calc(100% - 250px);
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* menù navigazione centrale */
+#wrapper main #main-nav {
+    /* debug */
+    height: 60px;
+    background-color: seagreen;
+}
+
+/* impostazioni sezioni */
+#wrapper main .type {
+    /* debug */
+    background-color: slateblue;
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#wrapper main .type .card {
+    float: left;
+    /* debug */
+    background-color: tomato;
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
 }
 
 /* barra inferiore con player */
