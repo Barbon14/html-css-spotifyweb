@@ -49,6 +49,33 @@ body {
 
 /* barra inferiore con player */
 #player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
     background-color: #282828;
+}
+
+/* brano in riproduzione */
+#player #song {
+    /* debug */
+    background-color: chocolate;
+    height: 80px;
+    width: 100px;
+}
+
+/* controlli principali riproduzione */
+#player #controls {
+    /* debug */
+    background-color: chocolate;
+    height: 80px;
+    width: 300px;
+}
+
+/* controllo volume e coda riproduzione */
+#player #volume {
+    /* debug */
+    background-color: chocolate;
+    height: 80px;
+    width: 100px;
 }
