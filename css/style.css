@@ -140,6 +140,16 @@ h4 {
     position: fixed;
     top: 0;
     right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#upgrade a {
+    border: solid 1px white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
 }
 
 /* menù navigazione centrale */
