@@ -9,12 +9,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 a {
     text-decoration: none;
     color: #a3a3a3;
@@ -23,15 +17,9 @@ a {
 h2, h3 {
     color: white;
 }
-/* debug */
-h2 {
-    height: 60px;
-    background-color: yellow;
-}
 
 h4 {
-    height: 40px;
-    background-color: cornflowerblue;
+    color: #a3a3a3;
 }
 
 
@@ -166,20 +154,28 @@ h4 {
 
 /* impostazioni sezioni */
 #wrapper main .type {
+    padding: 20px;
     /* debug */
-    background-color: slateblue;
     width: 100%;
     margin-top: 20px;
 }
 
+#wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
 
 #wrapper main .type .card {
-    float: left;
-    /* debug */
-    background-color: tomato;
-    height: 200px;
-    width: 200px;
-    border: solid 1px black;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    max-width: 220px;
+    width: calc((100% / 6) - 20px);
+}
+
+#wrapper main .type .card img {
+    object-fit: cover;
+    width: 100%;
 }
 
 /* barra inferiore con player */
