@@ -9,12 +9,20 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.clearfix {
+.clearfix::after {
     content: '';
     display: table;
     clear: both;
 }
 
+a {
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+h2, h3 {
+    color: white;
+}
 /* debug */
 h2 {
     height: 60px;
@@ -38,28 +46,83 @@ h4 {
     width: 250px;
     height: 100%;
     background-color: black;
-    padding: 10px;
+    padding: 20px;
 }
 
-#wrapper aside #side-nav {
-    /* debug */
-    background-color: blueviolet;
-    height: 200px;
+#logo {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+#side-nav li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+#side-nav li a {
+    display: flex;
+    align-items: center;
+}
+
+#side-nav li img {
+    width: 28px;
+    margin-right: 5px;
 }
 
 /* sezione playlist */
-#wrapper aside #playlist {
-    /* debug */
-    background-color: chartreuse;    
-    height: calc(100% - 200px - 80px);
+#playlist {
+    margin-top: 20px;
+}
+
+#new-playlist {
+    display: flex;
+    align-items: center;
+}
+
+#new-playlist .fa-plus {
+    background-color: #a3a3a3;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 48px;
+}
+
+#playlist li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+/* installa app */
+#app-install {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #a3a3a3;
+    padding-bottom: 10px;
+}
+
+#app-install img {
+    width: 20px;
+    margin-right: 10px;
 }
 
 /* utente */
-#wrapper aside #user {
-    /* debug */
-    background-color: blueviolet;
-    height: 80px;    
+#user {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 }
+
+#user img {
+    height: 28px;
+    width: 28px;
+    background-color: #808080;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
 /* contenuto centrale */
 #wrapper main {
     width: calc(100vw - 250px);
@@ -90,7 +153,6 @@ h4 {
 #wrapper main .type {
     /* debug */
     background-color: slateblue;
-    height: 300px;
     width: 100%;
     margin-top: 20px;
 }
