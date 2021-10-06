@@ -133,7 +133,7 @@ h4 {
 }
 
 /* barra fissa in alto con pulsante upgrade */
-#wrapper main #upgrade {
+#upgrade {
     height: 100px;
     width: calc(100% - 250px);
     background-color: rgba(0, 0, 0, 0.6);
@@ -143,10 +143,15 @@ h4 {
 }
 
 /* menù navigazione centrale */
-#wrapper main #main-nav {
-    /* debug */
-    height: 60px;
-    background-color: seagreen;
+#main-nav {
+    text-align: center;
+}
+
+#main-nav li {
+    display: inline-block;
+    margin: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* impostazioni sezioni */
