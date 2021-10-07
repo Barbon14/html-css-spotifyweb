@@ -44,6 +44,15 @@ h4 {
     margin-bottom: 10px;
 }
 
+#logo-small {
+    width: 28px;
+    display: none;
+}
+
+#wrapper aside .aside-text {
+    margin-left: 10px;
+}
+
 #side-nav li {
     list-style-type: none;
     margin: 10px 0;
@@ -56,7 +65,6 @@ h4 {
 
 #side-nav li img {
     width: 28px;
-    margin-right: 5px;
 }
 
 /* sezione playlist */
@@ -101,14 +109,13 @@ h4 {
 
 #app-install img {
     width: 20px;
-    margin-right: 10px;
 }
 
 /* utente */
 #user {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #user img {
@@ -116,7 +123,6 @@ h4 {
     width: 28px;
     background-color: #808080;
     border-radius: 50%;
-    margin-right: 20px;
 }
 
 /* contenuto centrale */
@@ -131,7 +137,7 @@ h4 {
 /* barra fissa in alto con pulsante upgrade */
 #upgrade {
     height: 100px;
-    width: calc(100% - 250px);
+    width: calc(100vw - 250px);
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
@@ -163,7 +169,6 @@ h4 {
 /* impostazioni sezioni */
 #wrapper main .type {
     padding: 20px;
-    /* debug */
     width: 100%;
     margin-top: 20px;
 }
@@ -181,7 +186,6 @@ h4 {
 }
 
 #wrapper main .type .card img {
-    object-fit: cover;
     width: 100%;
 }
 
@@ -280,18 +284,36 @@ h4 {
 @media screen and (max-width: 554px) {
 
     #wrapper aside {
-        width: auto;
+        width: 50px;
+        align-items: center;
+        padding: 10px 0;
     }
 
     #wrapper main {
-        width: auto;
+        width: calc(100vw - 50px);
     }
 
     #logo {
         display: none;
     }
 
+    #logo-small {
+        display: block;
+    }
+
+    #wrapper aside .aside-text {
+        display: none;
+    }
+ 
     #playlist {
         display: none;
+    }
+
+    #app-install {
+        border: none;
+    }
+
+    #upgrade {
+        width: calc(100vw - 50px);
     }
 }
