@@ -275,3 +275,23 @@ h4 {
     }
 
 }
+
+/* mediaquery per larghezze sotto 555px */
+@media screen and (max-width: 554px) {
+
+    #wrapper aside {
+        width: auto;
+    }
+
+    #wrapper main {
+        width: auto;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #playlist {
+        display: none;
+    }
+}
