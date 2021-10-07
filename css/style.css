@@ -266,3 +266,12 @@ h4 {
         flex-wrap: wrap;
     }
 }
+
+/* mediaquery per larghezze sotto 640px */
+@media screen and (max-width: 639px) {
+
+    #wrapper main .type .card {
+        width: calc((100% / 2) - 20px);
+    }
+
+}
